@@ -13,8 +13,8 @@ function log:scope()
     return scope.new()
 end
 
-function log:captureMessage(message, scope)
-
+function log:captureMessage(message, scope)    
+    if not key then return end
     local payload =
     {
         message = message,

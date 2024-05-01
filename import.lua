@@ -14,7 +14,7 @@ function log:scope()
 end
 
 function log:captureMessage(message, scope)
-    if not key or key == '' or key == "none" then return end
+    if not KEY or KEY == '' or KEY == "none" then return end
     local payload =
     {
         message = message,
